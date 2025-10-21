@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  web:
+    image: 'docker/getting-started:pwd'
+    ports:
+      - "80:80"
+    networks:
+      - webnet
+  redis:
+    image: "redis:alpine"
+    networks:
+      - webnet
+
+networks:
+  webnet:
