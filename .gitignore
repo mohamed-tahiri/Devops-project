@@ -1,5 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.pyc
+.venv/
 *.py[codz]
 *$py.class
 
@@ -9,6 +11,8 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
+deployments/
+backups/
 develop-eggs/
 dist/
 downloads/
@@ -32,7 +36,12 @@ MANIFEST
 *.manifest
 *.spec
 
+# Environment
+app-data/config.env
+
 # Installer logs
+logs/
+pids/
 pip-log.txt
 pip-delete-this-directory.txt
 
@@ -136,6 +145,7 @@ celerybeat.pid
 
 # Environments
 .env
+.env.*
 .envrc
 .venv
 env/
